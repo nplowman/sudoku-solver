@@ -1,1 +1,5 @@
-<p>This is the partial for view 1.</p>
+<div class="sudoku-grid">
+	<div class="sudoku-grid__row" data-ng-repeat="n in getRows() track by $index">
+		<div class="sudoku-grid__cell" data-ng-repeat="n in getCols() track by $index">1</div>
+	</div>
+</div>

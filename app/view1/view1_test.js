@@ -1,8 +1,8 @@
 'use strict';
 
-describe('myApp.view1 module', function() {
+describe('sudokuSolver.view1 module', function() {
 
-  beforeEach(module('myApp.view1'));
+  beforeEach(module('sudokuSolver.view1'));
 
   describe('view1 controller', function(){
 

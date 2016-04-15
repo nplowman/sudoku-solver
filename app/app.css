@@ -1,30 +1,41 @@
 /* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+h1 {
+  text-align: center;
+}
+.sudoku-grid {
+  margin: 20px auto;
+  width: 476px;
 }
 
-.menu:before {
-  content: "[";
+.sudoku-grid__row {
+  clear: both;
+  height: 50px;
 }
 
-.menu:after {
-  content: "]";
+.sudoku-grid__row:first-of-type {
+  border-top: 3px solid #000;
+}
+.sudoku-grid__row:nth-of-type(3n + 0) {
+  border-bottom: 3px solid #000;
 }
 
-.menu > li {
-  display: inline;
+.sudoku-grid__row:last-of-type {
+  border-bottom: 3px solid #000;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.sudoku-grid__cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  float: left;
+  font-size: 2em;
+  line-height: 1.7em;
+  text-align: center;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.sudoku-grid__cell:first-of-type {
+  border-left: 3px solid #000;
+}
+.sudoku-grid__cell:nth-of-type(3n + 0) {
+  border-right: 3px solid #000;
 }
