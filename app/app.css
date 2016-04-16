@@ -2,6 +2,17 @@
 h1 {
   text-align: center;
 }
+
+.solve-button {
+  margin: 0 auto;
+  display: block;
+  background: #0d3349;
+  color: #fff;
+  font-size: 1.3em;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 3px solid #eee;
+}
 .sudoku-grid {
   margin: 20px auto;
   width: 476px;
@@ -9,14 +20,15 @@ h1 {
 
 .sudoku-grid__row {
   clear: both;
-  height: 50px;
+  height: 54px;
+  border-collapse:collapse;
 }
 
 .sudoku-grid__row:first-of-type {
   border-top: 3px solid #000;
 }
 .sudoku-grid__row:nth-of-type(3n + 0) {
-  border-bottom: 3px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .sudoku-grid__row:last-of-type {
