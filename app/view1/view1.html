@@ -1,6 +1,6 @@
 <button class="solve-button" ng-click="solvePuzzle()">Solve Puzzle</button>
 <div class="sudoku-grid" data-ng-init="init()">
 	<div class="sudoku-grid__row" ng-repeat='row in rows'>
-		<input class="sudoku-grid__cell" ng-repeat="cell in row.cells" ng-model="cell.val" maxlength="1"/>
+		<input class="sudoku-grid__cell" ng-class="{highlight: cell.highlight}" ng-repeat="cell in row.cells" ng-model="cell.val" maxlength="1"/>
 	</div>
 </div>

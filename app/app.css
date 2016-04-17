@@ -45,6 +45,10 @@ h1 {
   text-align: center;
 }
 
+.sudoku-grid__cell.highlight {
+  color: green;
+}
+
 .sudoku-grid__cell:first-of-type {
   border-left: 3px solid #000;
 }
